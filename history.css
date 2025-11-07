@@ -1,0 +1,250 @@
+/* 页头样式 */
+header {
+    background-color: #B71C1C;
+    color: white;
+    padding: 10px 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a.active {
+    border-bottom: 2px solid rgb(217, 239, 158);
+}
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.search-box button {
+    padding: 5px 10px;
+    background-color: rgb(255, 254, 254);
+    border: none;
+    color: #B71C1C;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 横幅样式 */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #f8f8f8;
+    font-family: "Microsoft YaHei", sans-serif;
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  /* 按钮 */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .prev { left: 20px; }
+  .next { right: 20px; }
+
+  /* 指示点 */
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #fffcfc; /* Red background */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Timeline container styles */
+        .timeline-container {
+            width: 100%;
+            padding: 50px 10%;
+            text-align: center;
+        }
+        .timeline-header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        /* Timeline stage styles */
+        .timeline-stage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #b30000;
+            border-radius: 10px;
+        }
+        .timeline-stage:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .timeline-year {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .timeline-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #660000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-content p {
+            font-size: 18px;
+        }
+        
+        /* Adjust image size for timeline */
+        .timeline-stage img {
+            width: auto;
+            height: 150px; /* Set a fixed height for images to avoid stretching */
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        /* Slideshow container styles */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .slide {
+            display: none;
+            width: 100%;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Navigation buttons for slideshow */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0,0,0,0.4);
+            padding: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            user-select: none;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.6);
+        }
+        .prev { left: 20px; }
+        .next { right: 20px; }
+
+        /* Slideshow dot indicators */
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+  
+/* 页尾样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}

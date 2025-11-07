@@ -1,0 +1,211 @@
+/* 页头样式 */
+header {
+    background-color: #B71C1C;
+    color: white;
+    padding: 10px 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a.active {
+    border-bottom: 2px solid yellow;
+}
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+.search-box button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    color: #B71C1C;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 横幅样式 */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #f8f8f8;
+    font-family: "Microsoft YaHei", sans-serif;
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  /* 按钮 */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .prev { left: 20px; }
+  .next { right: 20px; }
+
+  /* 指示点 */
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+
+  :root{
+      --max-width:960px;
+      --accent:#eff45b;
+      --muted:#666;
+      --bg:#f5f5f7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      max-width:var(--max-width);
+      margin:28px auto;
+      padding:20px;
+    }
+    .card{
+      background:#fff;
+      border-radius:12px;
+      padding:18px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    }
+    header h1{
+      margin:0;
+      color:var(--accent);
+      font-size:1.4rem;
+      letter-spacing:0.2px;
+    }
+    .video-wrap{
+      margin-top:16px;
+    }
+    video{
+      width:100%;
+      height:auto;
+      border-radius:8px;
+      background:#000;
+      display:block;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:0.9rem;
+      margin-top:8px;
+    }
+
+    /* 文字内容与图片 */
+    .content{
+      margin-top:20px;
+      line-height:1.85;
+      color:#333;
+      font-size:1rem;
+    }
+    .content img.inline{
+      max-width:260px;
+      width:40%;
+      float:left;
+      margin:0 18px 14px 0;
+      border-radius:8px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    }
+    .content h2{margin-top:6px;color:#b71c1c}
+    .content em{color:var(--muted)}
+    .clear{clear:both}
+    /* 小屏幕：图片不浮动，居中显示 */
+    @media (max-width:700px){
+      .content img.inline{
+        float:none;
+        display:block;
+        margin:0 auto 12px;
+        width:80%;
+        max-width:320px;
+      }
+    }
+
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
