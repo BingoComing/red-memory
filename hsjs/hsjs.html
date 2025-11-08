@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新中国史</title>
+    <link rel="stylesheet" href="css/hsjs.css">
+    
+</head>
+<body>
+   <header>
+    <div class="BOX1">
+      <div class="logo">
+        <img src="img/loge.jpg" alt="Logo">
+        <h1>新中国史</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="hswy.html">首页</a></li>
+          <li><a href="history.html">新中国史</a></li>
+          <li><a href="heroes.html">伟人风采</a></li>
+          <li><a href="hsjs.html"class="active">红色精神</a></li>
+          <li><a href="gywm.html" >联系我们</a></li>
+        </ul>
+      </nav>
+      <div class="box2">
+        <input type="text" placeholder="搜索...">
+        <button>搜索</button>
+      </div>
+    </div>
+  </header>
+  <!-- 横幅 -->
+  <div class="hfbox">
+   <div class="slide"><img src="img/bj1.png" alt="图1"></div>
+    <div class="slide"><img src="img/bj2.jpg" alt="图2"></div>
+    <div class="slide"><img src="img/bj3.jpg" alt="图3"></div>
+    <div class="slide"><img src="img/bj4.jpg" alt="图4"></div>
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+  <div class="dots">
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+    <span class="dot" onclick="goToSlide(4)"></span>
+  </div>
+<main class="container" role="main">
+    <section class="card" aria-labelledby="page">
+      <header>
+        <h1 class="page">红色精神 — 传承与弘扬</h1>
+      </header>
+
+      <!-- 视频-->
+      <div class="video-wrap" aria-label="红色精神视频播放区">
+        <video controls preload="metadata" poster="images/poster.jpg" aria-describedby="videoHint">
+          <source src="img/dxm.mp4" type="video/mp4">
+          您的浏览器不支持 HTML5 video 标签，请使用现代浏览器或下载观看。
+        </video>
+      </div>
+      <article class="content" aria-labelledby="aboutTitle">
+        <img class="inline" src="img/cz.jpg" alt="烈士纪念馆与红军长征历史场景（示意图）">
+        <h2 id="aboutTitle">什么是红色精神？</h2>
+        <br>
+        <p>
+          红色精神是中国共产党和中国人民在革命、建设与改革长期实践中形成的宝贵精神财富，
+          体现了为民族独立、人民解放与国家富强而英勇奋斗的崇高品格。红色精神的核心要义包括：
+          坚定信念、无私奉献、艰苦奋斗、实事求是与勇于创新等。这些精神品质在不同历史时期被赋予
+          不同的时代内涵，但始终强调把人民利益放在首位。
+        </p>
+        <h3>红色精神的主要特征</h3>
+        <br>
+        <p>
+          首先，<strong>坚定理想信念</strong>构成精神的灵魂；其次，<strong>牺牲奉献</strong>体现为把集体与人民利益置于个人之上；
+          再者，<strong>艰苦奋斗与实践创新</strong>使得红色精神在新时代仍具生命力与指导意义。
+        </p>
+        <h3>怎样在今天传承与弘扬？</h3>
+        <br>
+        <p>
+          传承不是机械的模仿，而是把红色精神转化为现实行动：在工作中体现担当与责任，
+          在学习与创新中坚持求真务实，在社区与公益中践行互助与奉献。教育、纪念活动与文化创意
+          是把历史与精神传递给下一代的重要途径。
+        </p>
+      </article>
+    </section>
+  </main>
+  <button id="backToTop" title="回到顶部">↑</button>
+   <!-- 页尾 -->
+    <footer class="footer" role="contentinfo">
+        <p>© 2025 甘肃农业大学红色网页设计团队 | 保留所有权利</p>
+    </footer>
+     <script src="hswy.js"></script>
+</body>
+</html>
