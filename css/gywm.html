@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新中国史</title>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+  <!-- 页头 -->
+  <header>
+    <div class="box1">
+      <div class="logo">
+        <img src="img/loge.jpg" alt="Logo">
+        <h1>新中国史</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="hswy.html">首页</a></li>
+          <li><a href="history.html">新中国史</a></li>
+          <li><a href="heroes.html">伟人风采</a></li>
+          <li><a href="hsjs.html">红色精神</a></li>
+          <li><a href="gywm.html" class="active">联系我们</a></li>
+        </ul>
+      </nav>
+      <div class="box2">
+        <input type="text" placeholder="搜索...">
+        <button>搜索</button>
+      </div>
+    </div>
+  </header>
+  <!-- 横幅 -->
+  <div class="hfbox">
+    <div class="slide"><img src="img/bj1.png" alt=""></div>
+    <div class="slide"><img src="img/bj2.jpg" alt=""></div>
+    <div class="slide"><img src="img/bj3.jpg" alt=""></div>
+    <div class="slide"><img src="img/bj4.jpg" alt=""></div>
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+  </div>
+  <div class="dots">
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+    <span class="dot" onclick="goToSlide(4)"></span>
+  </div>
+  
+  <!-- 主体内容 -->
+  <div class="box3">
+    <div class="grid">
+      <section class="about">
+        <div class="ribbon">关于我们</div>
+        <p>穿越人海，走进旷野</p>
+        <p class="poem">
+          去听风，去听雨，去听万物众声越过山川，横跨湖海<br>
+          去看山，去看海，去看万物众生<br>
+          昼夜往复，月升日落大千世界，万般姿态身体总要到达一次<br>
+          去做一次旅人吧，畅游于山水间不断地前进，寻找、探索、到达。
+        </p>
+        <div class="photo">
+          <img src="img/bh.jpg" alt="冰河世纪">
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="ribbon">联系我们</div>
+        <form onsubmit="event.preventDefault(); alert('已提交');">
+          <div class="box4">
+            <div class="label">用户名</div>
+            <input class="input" type="text" name="username"
+                   placeholder="请输入用户名(2-4位中文)"
+                   pattern="[\u4e00-\u9fa5]{2,4}" required>
+          </div>
+          <div class="box4">
+            <div class="label">邮箱</div>
+            <input class="input" type="email" name="email" placeholder="请输入邮箱" required>
+          </div>
+          <div class="box4">
+            <div class="label">电话</div>
+            <input class="input" type="tel" name="phone" placeholder="请输入电话">
+          </div>
+          <div class="box4">
+            <div class="label">留言</div>
+            <textarea class="textarea" name="message"></textarea>
+          </div>
+          <button class="submit" type="submit">提交</button>
+        </form>
+      </section>
+    </div>
+  </div>
+   <button id="backtotop" title="回到顶部">↑</button>
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2025 甘肃农业大学红色网页设计团队 | 保留所有权利</p>
+  </footer>
+  <script src="hswy.js"></script>
+</body>
+</html>

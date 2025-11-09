@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新中国史</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="box1">
+      <div class="logo">
+        <img src="img/loge.jpg" alt="Logo">
+        <h1>新中国史</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="hswy.html"class="active">首页</a></li>
+          <li><a href="history.html">新中国史</a></li>
+          <li><a href="heroes.html">伟人风采</a></li>
+          <li><a href="hsjs.html">红色精神</a></li>
+          <li><a href="gywm.html" >联系我们</a></li>
+        </ul>
+      </nav>
+      <div class="box2">
+        <input type="text" placeholder="搜索...">
+        <button>搜索</button>
+      </div>
+    </div>
+  </header>
+  <!-- 横幅 -->
+  <div class="hfbox">
+    <div class="slide"><img src="img/bj1.png" alt=""></div>
+    <div class="slide"><img src="img/bj2.jpg" alt=""></div>
+    <div class="slide"><img src="img/bj3.jpg" alt=""></div>
+    <div class="slide"><img src="img/bj4.jpg" alt=""></div>
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+</div>
+<div class="dots">
+  <span class="dot" onclick="goToSlide(1)"></span>
+  <span class="dot" onclick="goToSlide(2)"></span>
+  <span class="dot" onclick="goToSlide(3)"></span>
+  <span class="dot" onclick="goToSlide(4)"></span>
+</div>
+<div class="wrap">
+    <div class="box4">新中国近代史</div>
+    <div class="grid">
+      <section class="article">
+        <p><b>新中国近代史通常指1949年中华人民共和国成立至今的历史，核心脉络是从站起
+          来、富起来到强起来的伟大飞跃，关键阶段与事件如下：</b></p>
+                  <br>
+        <p><b>1. 过渡与确立（1949-1978年）</b> 1949年新中国成立，彻底结束半殖民地半封建社会，实现民族独立和人民解放。
+           1956年完成社会主义改造，确立社会主义基本制度，为发展奠定制度基础。
+           这一时期虽经历曲折，但建成独立的工业体系和国民经济体系，国防（两弹一星）、科技等领域实现突破。</p>
+                  <br>
+        <p><b>2. 改革开放与发展（1978-2012年）</b> 1978年十一届三中全会开启改革开放，以经济建设为中心，农村家庭联产承包责任制、城市经济体制改革相继推进。
+           2001年加入WTO，深度融入全球经济，经济快速增长，成为世界第二大经济体。
+           民生持续改善，基础设施建设提速，综合国力显著提升。</p>
+                  <br>
+        <p><b>3. 新时代与复兴（2012年至今）</b>进入中国特色社会主义新时代，聚焦高质量发展，脱贫攻坚、全面建成小康社会目标如期实现。
+           科技自立自强成果丰硕（高铁、5G、航天、新能源等），生态文明建设深入推进，国家治理体系和治理能力现代化持续提升。
+           坚定维护国家主权、安全、发展利益，积极参与全球治理，迈向民族复兴新征程。</p>
+      </section>
+      <aside>
+        <div class="photo">
+          <img src="img/bz.jpg"alt="强国复兴有我" />
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="box5">新中国成就</div>
+  <div class="card-container">
+    <div class="card">
+      <img src="img/wnjh.jpg" alt="五年计划">
+      <div class="card-content">
+        <h3>1953年实施第一个五年计划</h3>
+        <p>受朝鲜战争影响，加之保障国家安全需要，我国优先发展重工业，实行赶超经济发达国家...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/qdbz.jpg" alt="氢弹爆炸">
+      <div class="card-content">
+        <h3>1967年第一颗氢弹爆炸成功</h3>
+        <p>1967年6月17日,中国第一颗氢弹爆炸成功,这标志着中国在核武器研发方面取得了重大突破...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/smzz.jpg" alt="世界贸易组织">
+      <div class="card-content">
+        <h3>2001年加入世界贸易组织</h3>
+        <p>2001年12月11日，中国正式成为世贸组织第143名成员,，这是中国深度融入世界经济的重要里程碑...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/fjj.jpg" alt="福建舰">
+      <div class="card-content">
+        <h3> 2022年“福建舰”下水</h3>
+        <p>2022年6月17日，中国第一艘完全自主设计建造的航母“福建舰”下水，这是中国海军发展史上的重要事件...</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <button id="backtotop" title="回到顶部">↑</button>
+    <!-- 页尾 -->
+    <footer>
+        <p>© 2025 甘肃农业大学红色网页设计团队 | 保留所有权利</p>
+    </footer>
+    <script src="hswy.js"></script>
+</body>
+</html>
